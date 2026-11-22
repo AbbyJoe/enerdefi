@@ -1,0 +1,88 @@
+import type { Notification } from "../lib/types";
+
+export const notificationList: Notification[] = [
+  {
+    id: "notification-1",
+    title: "Permit expiring",
+    body: "PRM-2024-014 expires within 30 days.",
+    time: "2h ago",
+    unread: true,
+  },
+  {
+    id: "notification-2",
+    title: "New filing assigned",
+    body: "Sahara Solar Farm Phase 1 is waiting for review.",
+    time: "5h ago",
+    unread: true,
+  },
+  {
+    id: "notification-3",
+    title: "Document uploaded",
+    body: "Audited financials were added to PRJ-008.",
+    time: "1d ago",
+    unread: true,
+  },
+  {
+    id: "notification-4",
+    title: "Status changed",
+    body: "PRM-2024-006 was marked Issued.",
+    time: "1d ago",
+    unread: true,
+  },
+  {
+    id: "notification-5",
+    title: "Support reply",
+    body: "Your question about TIN validation was answered.",
+    time: "2d ago",
+    unread: true,
+  },
+  {
+    id: "notification-6",
+    title: "Wallet credit",
+    body: "Regulatory fee receipt NGN 250,000 posted.",
+    time: "3d ago",
+    unread: true,
+  },
+  {
+    id: "notification-7",
+    title: "Bid received",
+    body: "A service request was submitted for Kainji Hydro.",
+    time: "3d ago",
+    unread: true,
+  },
+  {
+    id: "notification-8",
+    title: "Message from operator",
+    body: "George Brown sent a note on site access.",
+    time: "4d ago",
+    unread: true,
+  },
+  {
+    id: "notification-9",
+    title: "Compliance reminder",
+    body: "ESG declaration is still outstanding on 4 projects.",
+    time: "5d ago",
+    unread: true,
+  },
+  {
+    id: "notification-10",
+    title: "Report ready",
+    body: "October production report is available to download.",
+    time: "6d ago",
+    unread: true,
+  },
+  {
+    id: "notification-11",
+    title: "Session notice",
+    body: "You signed in as Matthew Smith, Core Regulator.",
+    time: "1w ago",
+    unread: true,
+  },
+  {
+    id: "notification-12",
+    title: "Archive complete",
+    body: "2022 expired filings were archived.",
+    time: "1w ago",
+    unread: false,
+  },
+];

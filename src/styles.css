@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #212b36;
+  --color-ink-900: #2c3036;
+  --color-muted: #637381;
+  --color-line: rgba(5, 17, 34, 0.1);
+  --color-brand: #fe6600;
+  --color-sidebar: #0b1d38;
+  --color-canvas: #f4f6f8;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink-900);
+  background: var(--color-canvas);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+@layer base {
+  ::placeholder {
+    color: rgba(5, 17, 34, 0.45);
+  }
+}
+
+@utility skeleton {
+  background: linear-gradient(90deg, #eef1f4 35%, #f8fafb 50%, #eef1f4 65%);
+  background-size: 250% 100%;
+  animation: skeleton-shimmer 1.6s linear infinite;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+    background: #eef1f4;
+  }
+}
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 150% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@keyframes success-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.35);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes success-burst-fade {
+  0% {
+    opacity: 0;
+    filter: blur(2px);
+    transform: scale(0.7);
+  }
+  55% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.04);
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
+  }
+}
+
+@keyframes success-ring {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.45);
+  }
+}
+
+@keyframes modal-in {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
